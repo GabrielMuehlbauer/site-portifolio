@@ -1,0 +1,75 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+    /*Estilo Main Content*/
+    .main_content p {
+        padding: 150px 15px 150px 100px;
+    }
+
+    .main_content img {
+        width: 144.67px;
+        height: auto;
+        padding: 0 70px 0 70px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1319px) {
+    /*Estilo Main Content*/
+    .main_content {
+        display: flex;
+        margin: 25px 0 25px 0;
+    }
+
+    .main_content p {
+        padding: 150px 200px 75px 100px;
+    }
+
+    .main_content img {
+        width: 250px;
+        height: auto;
+        float: right;
+        padding: 0 100px 0 100px;
+    }
+
+    /*Estilo About Me*/
+    .about_me {
+        background-color: #CEE2FF;
+        margin: 25px 15px 40px 15px;
+        padding: 50px 10px 50px 10px;
+        border-radius: 35px;
+        text-align: center;
+    }
+    
+    .about_me-container {
+        display: flex;
+        padding: 0 30px 0 30px;
+        gap: 40px;
+    }
+}
+
+@media (min-width: 1320px) {
+    /*Estilo Main Content*/
+    .main_content {
+        display: flex;
+        margin: 25px 0 25px 0;
+    }
+
+    .main_content p {
+        padding: 150px 250px 130px 250px;
+    }
+
+    .main_content img {
+        width: 250px;
+        padding: 0 100px 0 200px;
+    }
+    
+    /*Estilo About Me*/
+    .about_me {
+        margin: 25px 30px 40px 30px;
+        padding: 50px 30px 50px 30px;
+    }
+
+    .about_me-container {
+        display: flex;
+        padding: 0 30px 0 30px;
+        gap: 25px;
+    }
+}
