@@ -22,8 +22,8 @@ b {
 body {
     background-color: #f3f6e8;
     font-family: "Poppins", sans-serif;
-    cursor: url("files/images/cursor-default.png"), default !important;
-    cursor: url("files/images/cursor-pointer.png"), pointer;
+    cursor: url("files/images/cursor-default.png"), default;
+    cursor: url("files/images/cursor-pointer.png"), pointer  !important; 
 }
 
 /*Estilo Header*/
