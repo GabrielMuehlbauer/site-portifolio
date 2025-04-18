@@ -1,13 +1,8 @@
 @font-face {
     font-family: "Open Sauce Sans", sans-serif;
     src: url(files/fonts/Open_Sauce/OpenSauceSans-Regular.ttf);
+    src: url(files/fonts/Open_Sauce/OpenSauceSans-Regular.woff);
     font-weight: normal;
-}
-
-@font-face {
-    font-family: "Open Sauce Sans", sans-serif;
-    src: url(files/fonts/Open_Sauce/OpenSauceSans-Bold.ttf);
-    font-weight: bold;
 }
 
 ::selection {
