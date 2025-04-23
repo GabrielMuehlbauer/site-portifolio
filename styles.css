@@ -1,6 +1,13 @@
 @font-face {
     font-family: "Open Sauce Sans";
     src: url(files/fonts/Open_Sauce/OpenSauceSans-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Open Sauce Sans";
+    src: url(files/fonts/Open_Sauce/OpenSauceSans-Black.ttf);
+    font-weight: 900;
 }
 
 ::selection {
@@ -134,7 +141,7 @@ footer {
 
 .contact_me button {
     background-color: #fafafa;
-    color: #000;
+    color: #252525;
     font-family: "Open Sauce Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
