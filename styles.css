@@ -61,9 +61,16 @@ header img {
 }
 
 /*Estilo About Me*/
+.background-about_me {
+    background: linear-gradient( to bottom, 
+    #fafafa 0%,
+    #fafafa 50%,
+    #f6f1ff 50%,
+    #f6f1ff 100%);
+}
 .about_me {
     background-color: #CEE2FF;
-    margin: 40px 15px 40px 15px;
+    margin: 40px 15px 0px 15px;
     padding: 50px 10px 50px 10px;
     border-radius: 35px;
     text-align: center;
@@ -96,6 +103,42 @@ header img {
 
 .about_me img:hover {
     transform: scale(1.1); /*animação de zoom*/
+}
+
+/*Estilo Hobbies*/
+.hobbies {
+    background-color: #f6f1ff;
+    padding: 40px 35px 40px 35px;
+    text-align: center;
+}
+
+.Title_hobbies {
+    font-family: "Open Sauce Sans", sans-serif;
+    text-align: center;
+    font-weight: 900;
+    font-size: 30px;
+    color: #252525;
+    margin: 30px 0 30px 0;
+}
+
+.hobbies-content p {
+    text-align: justify;
+    margin: 20px 0 20px 0;
+    line-height: 20px;
+}
+
+.playing_img {
+    max-width: 250px;
+    width: auto;
+    border-radius: 25px;
+    margin: 20px 0 20px 0;
+}
+
+.paint_img {
+    max-width: 250px;
+    width: auto;
+    border-radius: 25px;
+    margin: 20px 0 20px 0;
 }
 
 /*Estilo Verse*/
