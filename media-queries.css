@@ -19,7 +19,7 @@
     }
 
     .main_content p {
-        padding: 150px 200px 75px 100px;
+        padding: 50px 200px 50px 100px;
     }
 
     .main_content img {
@@ -53,7 +53,7 @@
     }
 }
 
-@media (min-width: 1320px) and (max-width: 2000px) {
+@media (min-width: 1320px) and (max-width: 1899px) {
     /*Estilo Main Content*/
     .main_content {
         display: flex;
@@ -61,12 +61,12 @@
     }
 
     .main_content p {
-        padding: 150px 250px 130px 250px;
+        padding: 100px 250px 100px 250px;
     }
 
     .main_content img {
-        width: 250px;
-        padding: 0 100px 0 200px;
+        width: 300px;
+        padding: 0 150px 0 150px;
     }
     
     /*Estilo About Me*/
@@ -85,7 +85,7 @@
     }
 
     /*Estilo Hobbies*/
-    .container-about_me {
+    #container-about_me {
         display: flex;
         margin: 0 30px 0 30px;
         gap: 30px;
@@ -103,23 +103,18 @@
     .hobbies-content {
         overflow-y: scroll;
         height: 370px;
-        scrollbar-width: none;        /* Firefox */
-        -ms-overflow-style: none;     /* Internet Explorer e Edge antigos */
     }
 
-    .hobbies-content::-webkit-scrollbar {
-        display: none;                /* Chrome, Safari e Edge */
-    }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 1900px) {
     .main_content p {
         padding: 65px 15px 0 400px;
     }
 
     .main_content img {
-        width: 250px;
-        padding: 0 200px 0 700px;
+        width: 300px;
+        padding: 0 400px 0 600px;
     }
 
     /*Estilo About Me*/
@@ -132,7 +127,7 @@
     }
 
     /*Estilo Hobbies*/
-    .container-about_me {
+    #container-about_me {
         display: flex;
         margin: 0 30px 0 30px;
         gap: 30px;
@@ -149,12 +144,6 @@
 
     .hobbies-content {
         overflow-y: scroll;
-        height: 370px;
-        scrollbar-width: none;        
-        -ms-overflow-style: none;    
-    }
-
-    .hobbies-content::-webkit-scrollbar {
-        display: none;                /* Chrome, Safari e Edge */
+        height: 370px; 
     }
 }

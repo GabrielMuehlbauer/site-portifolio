@@ -21,6 +21,22 @@
 <body>
     <!-- Header -->
     <header>
+        <button id="menu-button"><img src="files/icons/menu_250dp_252525_FILL0_wght400_GRAD0_opsz48.png" alt=""></button>
+<div id="drawer" class="drawer">
+  <nav>
+    <div class="internal_links">
+    <a href="#" class="home-nav"><img src="files/icons/home_250dp_252525_FILL0_wght400_GRAD0_opsz48.png" alt="">Início</a>
+    <a href="#container-about_me" class="about_me-nav"><img src="files/icons/person_250dp_252525_FILL0_wght400_GRAD0_opsz48.png" alt="">Sobre mim</a>
+    <a href="#" class="skills-nav"><img src="files/icons/business_center_250dp_252525_FILL0_wght400_GRAD0_opsz48.png" alt="">Linguagens & Tecnologias</a>
+    </div>
+    <hr>
+    <div class="external_links">
+        <a href="https://github.com/GabrielMuehlbauer" class="git-hub-nav"><img src="files/icons/folder_code_250dp_252525_FILL0_wght400_GRAD0_opsz48.png" alt="">Git Hub</a>
+    </div>
+  </nav>
+</div>
+<div id="overlay" class="overlay"></div>
+
         <picture>
             <source media="(max-width: 767px)" srcset="files/images/header-phone.webp">
             <source media="(max-width: 1023px)" srcset="files/images/header-tablet.webp">
@@ -36,11 +52,11 @@
                 como visitante do meu site! Aqui você verá os meus principais projetos e conhecimentos.</p>
             <picture>
                 <source media="(max-width: 1023px)" srcset="files/images/decorativeCircles.png">
-                <img src="files/images/decorativeCircles-2.png" alt="">
+                <img src="files/images/four-forms_decorative.png" alt="">
             </picture>
         </div>
 
-        <section class="container-about_me">
+        <section id="container-about_me">
             <!-- Sobre mim -->
              <div class="background-about_me">
             <div class="about_me">
@@ -100,6 +116,8 @@
             <h3>Gabriel Müehlbauer</h3>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
