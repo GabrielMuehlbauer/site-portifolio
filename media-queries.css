@@ -105,6 +105,35 @@
         height: 370px;
     }
 
+    /*Estilo Skills*/
+    .tray_skills_content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    /* Coluna da esquerda */
+    .left-column {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 10px;
+    }
+    
+    /* Coluna da direita */
+    .technologies {
+        flex: 1;
+        padding: 10px;
+    }
+    
+    /* Sub-estilos */
+    .front-end,
+    .back-end,
+    .technologies {
+        margin-bottom: 20px;
+    }    
+
 }
 
 @media (min-width: 1900px) {
@@ -146,4 +175,34 @@
         overflow-y: scroll;
         height: 370px; 
     }
+
+    /*Estilo Skills*/
+    .tray_skills_content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    
+    /* Coluna da esquerda */
+    .left-column {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding: 10px;
+    }
+    
+    /* Coluna da direita */
+    .technologies {
+        flex: 1;
+        padding: 10px;
+    }
+    
+    /* Sub-estilos */
+    .front-end,
+    .back-end,
+    .technologies {
+        margin-bottom: 20px;
+    }
+    
 }

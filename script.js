@@ -11,3 +11,14 @@ overlay.addEventListener('click', () => {
   drawer.classList.remove('open');
   overlay.classList.remove('show');
 });
+
+// Seleciona todos os links dentro da gaveta
+const drawerLinks = document.querySelectorAll('#drawer a');
+
+// Adiciona um evento de clique a cada link
+drawerLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    drawer.classList.remove('open');
+    overlay.classList.remove('show');
+  });
+});

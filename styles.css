@@ -34,16 +34,24 @@ a {
 }
 
 #menu-button {
-    position: absolute;
+    position: fixed;
     background-color: #fafafa;
-    border: #fafafa;
+    border: 1px solid #252525;
     border-radius: 10px;
     margin: 10px;
+    box-shadow: 0px 3px 0px rgba(26, 35, 54, 0.25);
+    transition: transform 0.2s ease;
 }
+
+#menu-button:hover {
+    transform: scale(1.05);
+}
+
 #menu-button img{
     width: 25px;
     padding: 10px 5px 10px 5px;
 }
+
 .drawer {
     position: fixed;
     top: 0;
@@ -95,7 +103,7 @@ a {
   }
 
   .drawer .external_links a:hover {
-    background-color: #CEE2FF;
+    background-color: #e9f2ff;
     border: 1px solid #252525;
     transform: scale(1.05);
   }
@@ -262,10 +270,100 @@ header img {
     text-align: right;
 }
 
+/*Skills*/
+#skills {
+    background-color: #1A2336;
+    padding: 20px;
+}
+
+.main-skills {
+    color: #fafafa;
+}
+
+.main-skills h2 {
+    font-family: "Open Sauce Sans", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 0 15px 0;
+}
+
+.main-skills p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 20px;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    margin: 30px auto;
+}
+
+.tray_skills {
+    background-color: #e9f2ff;
+    margin: 40px 0 40px 0;
+    padding: 50px 10px 50px 10px;
+    border-radius: 35px;
+}
+
+.front-end {
+    text-align: center;
+}
+
+.back-end {
+    text-align: center;
+}
+
+.technologies {
+    text-align: center;
+}
+
+.front-end h3 {
+    color: #252525;
+    font-family: "Open Sauce Sans", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.back-end h3 {
+    color: #252525;
+    font-family: "Open Sauce Sans", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.technologies h3 {
+    color: #252525;
+    font-family: "Open Sauce Sans", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+
+.tray_skills img {
+    width: 100px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #252525;
+    border-radius: 20px;
+    transition: transform 0.3s ease; /*animação de zoom*/
+}
+
+.tray_skills img:hover {
+    transform: scale(1.1); /*animação de zoom*/
+    box-shadow: 0px 3px 0px rgba(26, 35, 54, 0.25);
+}
+
+
 /*Estilo Footer*/
 footer {
     background-color: #1A2336;
     padding: 15px;
+    margin-top: 50px;
 }
 
 .contact_me {
