@@ -22,15 +22,27 @@ b {
 body {
     background-color: #fafafa;
     font-family: "Poppins", sans-serif;
-    cursor: url("files/images/cursor-default.png"), default; 
+    cursor: url("files/cursor/cursor-default.png"), default; 
 }
 
 button {
-    cursor: url("files/images/cursor-pointer.png"), pointer;
+    cursor: url("files/cursor/cursor-pointer.png"), pointer;
 }
 
 a {
-    cursor: url("files/images/cursor-pointer.png"), pointer;
+    cursor: url("files/cursor/cursor-pointer.png"), pointer;
+}
+
+h2 {
+    cursor: url("files/cursor/cursor-text.png"), text;
+}
+
+h3 {
+    cursor: url("files/cursor/cursor-text.png"), text;
+}
+
+p {
+    cursor: url("files/cursor/cursor-text.png"), text;
 }
 
 #menu-button {
@@ -61,8 +73,8 @@ a {
     background-color: #fafafa;
     transition: left 0.3s ease;
     z-index: 1000;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px ;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px ;
   }
   
   .drawer.open {
@@ -80,6 +92,22 @@ a {
     border-top: 1px solid #252525; /* Adiciona uma borda superior personalizada */
     width: 80%; /* Define a largura da linha */
     margin: 20px auto; /* Centraliza a linha e adiciona espaçamento vertical */
+  }
+
+  .title-nav {
+    padding: 15px 0 15px 0;
+  }
+
+  .title-nav h4 {
+    font-family: "Open Sauce Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+  }
+
+  .title-nav h5 {
+    font-family: "Open Sauce Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
   }
 
   .drawer a {
