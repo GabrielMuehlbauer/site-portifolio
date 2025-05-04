@@ -114,6 +114,7 @@ p {
     display: flex;
     align-items: center;
     font-family: "Open Sauce Sans", sans-serif;
+    font-size: 18px;
     color: #252525;
     text-decoration-line: none;
     margin: 10px 0 10px 0;
@@ -214,7 +215,7 @@ header img {
     text-align: center;
     font-size: 30px;
     margin-bottom: 15px;
-    color: #1A2336;
+    color: #252525;
 }
 
 .about_me p {
@@ -297,7 +298,7 @@ header img {
 
 .verse-text {
     font-family: "Open Sauce Sans", sans-serif;
-    color: #232323;
+    color: #252525;
     font-size: 30px;
     line-height: 35px;
     text-align: left;
