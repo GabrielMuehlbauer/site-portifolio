@@ -84,6 +84,11 @@
         padding: 0;
     }
 
+    /*Estilo Verse*/
+    .verse_container {
+        margin: 40px 30px 40px 30px;
+    }
+
     /*Estilo Hobbies*/
     #container-about_me {
         display: flex;
@@ -157,6 +162,11 @@
 
     .about_me-content {
         padding: 0;
+    }
+
+    /*Estilo Verse*/
+    .verse_container {
+        margin: 40px 30px 40px 30px;
     }
 
     /*Estilo Hobbies*/

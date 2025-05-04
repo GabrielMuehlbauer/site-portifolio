@@ -282,13 +282,14 @@ header img {
     background-size: cover;                    /* Cobre toda a tela */
     background-position: center;               /* Centraliza a imagem */
     background-repeat: no-repeat;              /* Não repete a imagem */
-    padding: 20px 0 20px 0;
-    margin: 40px 0 40px 0;
+    padding: 20px 10px 20px 10px;
+    margin: 40px 15px 40px 15px;
+    border-radius: 30px;
 }
 
 .verse {
     margin: 50px auto;
-    width: 290px;
+    width: 270px;
     background-color: #e9f2ff;
     border-radius: 30px;
     padding: 30px 20px 30px 20px;
@@ -309,7 +310,7 @@ header img {
     font-size: 20px;
     font-weight: 900;
     color: #1A2336;
-    padding-left: 100px;
+    padding-left: 80px;
     text-align: right;
 }
 
