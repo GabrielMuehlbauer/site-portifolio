@@ -93,7 +93,7 @@
     
     .hobbies {
         border-radius: 35px;
-        padding: 40px 60px 40px 60px;
+        padding: 40px 45px 40px 45px;
     }
 
     .Title_hobbies {
@@ -103,6 +103,10 @@
     .hobbies-content {
         overflow-y: scroll;
         height: 370px;
+    }
+
+    .hobbies-content p {
+        padding: 0 15px 0 15px;
     }
 
     /*Estilo Skills*/
@@ -164,7 +168,7 @@
 
     .hobbies {
         border-radius: 35px;
-        padding: 40px 60px 40px 60px;
+        padding: 40px 45px 40px 45px;
     }
 
     .Title_hobbies {
@@ -174,6 +178,10 @@
     .hobbies-content {
         overflow-y: scroll;
         height: 370px; 
+    }
+
+    .hobbies-content p {
+        padding: 0 15px 0 15px;
     }
 
     /*Estilo Skills*/
