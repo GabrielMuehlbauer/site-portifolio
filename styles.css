@@ -404,6 +404,108 @@ header img {
     box-shadow: 0px 3px 0px rgba(26, 35, 54, 0.25);
 }
 
+/*Estilo My Projects*/
+#my_projects {
+    background-color: #CEE2FF;
+}
+
+.my_projects_content {
+    padding: 50px 20px 50px 20px;
+}
+
+.my_projects_content_text h2{
+    font-family: "Open Sauce Sans", sans-serif;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 0 15px 0;
+}
+
+.my_projects_content_text p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 20px;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    margin: 30px auto;
+}
+
+.carousel {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    min-width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .carousel-track a {
+    text-decoration: none;
+    background-color: #fafafa;
+    border-radius: 35px;
+  }
+
+  .description {
+    padding: 20px;
+  }
+
+  .carousel-track a img {
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+  }
+
+  .description h3 {
+    color: #252525;
+    font-family: "Open Sauce Sans", sans-serif;
+    font-weight: 900;
+    text-align: left;
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+
+  .description p {
+    text-align: justify;
+    color: #000;
+    line-height: 20px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 20px;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    border-radius: 10px;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+  }
+  
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }
+
 
 /*Estilo Footer*/
 footer {
