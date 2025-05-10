@@ -55,17 +55,33 @@
     }
 
     /*Estilo My Projects*/
+    .carousel {
+    width: auto;
+  }
+
     .carousel-track {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
         transform: none !important;
+        justify-content: center;
     }
 
-    .carousel-item a {
-        /*flex: 0 0 calc(50% - 10px); /* 2 itens por linha com gap */
-        min-width: 50%; /* ou 50% se usar flexbox */
-        width: 100%; /* para grid, deixe ele se ajustar ao grid */
+    .carousel-track a {
+        border: 1px solid transparent;
+        transition: transform 0.3s ease; /*animação de zoom*/
+    }
+
+    .carousel-track a:hover {
+        border: 1px solid #252525;
+    }
+
+    .carousel-track a {
+        width: 300px;
+    }
+    
+    .carousel-button {
+        display: none;
     }
 }
 
@@ -164,8 +180,38 @@
     .technologies {
         margin-bottom: 20px;
     }
+    /*Estilo My Projects*/
+    .carousel {
+    width: auto;
+  }
 
+    .carousel-track {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+        transform: none !important;
+        justify-content: center;
+    }
+
+    .carousel-track a {
+        width: 300px;
+        border: 1px solid transparent;
+        transition: transform 0.3s ease; /*animação de zoom*/
+    }
+
+    .carousel-track a:hover {
+        border: 1px solid #252525;
+    }
+
+    .carousel-item {
+        width: 300px;
+    }
+    
+    .carousel-button {
+        display: none;
+    }
 }
+
 
 @media (min-width: 1900px) {
 
@@ -249,6 +295,37 @@
     .back-end,
     .technologies {
         margin-bottom: 20px;
+    }
+
+    /*Estilo My Projects*/
+    .carousel {
+    width: auto;
+  }
+
+    .carousel-track {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+        transform: none !important;
+        justify-content: center;
+    }
+
+    .carousel-track a {
+        width: 300px;
+        border: 1px solid transparent;
+        transition: transform 0.3s ease;
+    }
+
+    .carousel-track a:hover {
+        border: 1px solid #252525;
+    }
+
+    .carousel-item {
+        width: 300px;
+    }
+    
+    .carousel-button {
+        display: none;
     }
 
 }
