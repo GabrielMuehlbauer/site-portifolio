@@ -57,6 +57,7 @@
     /*Estilo My Projects*/
     .carousel {
     width: auto;
+    height: 100%;
   }
 
     .carousel-track {
@@ -67,17 +68,14 @@
         justify-content: center;
     }
 
-    .carousel-track a {
-        border: 1px solid transparent;
-        transition: transform 0.3s ease; /*animação de zoom*/
-    }
-
-    .carousel-track a:hover {
-        border: 1px solid #252525;
-    }
-
-    .carousel-track a {
+    .carousel-item {
+        border-radius: 35px;
         width: 300px;
+        border: 1px solid transparent;
+    }
+
+    .carousel-item:hover {
+        border: 1px solid #252525;
     }
     
     .carousel-button {
@@ -188,23 +186,21 @@
     .carousel-track {
         display: flex;
         flex-wrap: nowrap;
-        gap: 30px;
+        gap: 20px;
         transform: none !important;
         justify-content: center;
-    }
-
-    .carousel-track a {
-        width: 300px;
-        border: 1px solid transparent;
-        transition: transform 0.3s ease; /*animação de zoom*/
-    }
-
-    .carousel-track a:hover {
-        border: 1px solid #252525;
+        flex-direction: column;
+        align-items: center;
     }
 
     .carousel-item {
-        width: 300px;
+        border-radius: 35px;
+        width: 400px;
+        border: 1px solid transparent;
+    }
+
+    .carousel-item:hover {
+        border: 1px solid #252525;
     }
     
     .carousel-button {
@@ -304,20 +300,10 @@
 
     .carousel-track {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         gap: 30px;
         transform: none !important;
         justify-content: center;
-    }
-
-    .carousel-track a {
-        width: 300px;
-        border: 1px solid transparent;
-        transition: transform 0.3s ease;
-    }
-
-    .carousel-track a:hover {
-        border: 1px solid #252525;
     }
 
     .carousel-item {

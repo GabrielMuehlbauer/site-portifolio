@@ -26,36 +26,37 @@ drawerLinks.forEach(link => {
 
 /*Carrosel do My Projects*/
 const track = document.querySelector('.carousel-track');
-  const nextBtn = document.querySelector('.carousel-button.next');
-  const prevBtn = document.querySelector('.carousel-button.prev');
+const nextBtn = document.querySelector('.carousel-button.next');
+const prevBtn = document.querySelector('.carousel-button.prev');
+const items = document.querySelectorAll('.carousel-item');
 
-  let index = 0;
-  const totalItems = document.querySelectorAll('.carousel-item').length;
+let index = 0;
 
-  function updateCarousel() {
-    if (window.innerWidth >= 1023) return; 
-
-    const item = document.querySelector('.carousel-item');
-    const style = getComputedStyle(item);
-    const gap = parseInt(style.marginRight) || 20; // Ou você define o valor usado no CSS
-    const slideWidth = item.offsetWidth + gap;
-
-    track.style.transform = `translateX(-${index * slideWidth}px)`;
+function updateCarousel() {
+  if (window.innerWidth >= 1023) {
+    track.style.transform = 'none'; // sem carrossel no desktop
+    return;
   }
 
-  nextBtn.addEventListener('click', () => {
-    if (index < totalItems - 1) {
-      index++;
-      updateCarousel();
-    }
-  });
+  const item = items[0];
+  const slideWidth = item.getBoundingClientRect().width + 20;
+  track.style.transform = `translateX(-${index * slideWidth}px)`;
+}
 
-  prevBtn.addEventListener('click', () => {
-    if (index > 0) {
-      index--;
-      updateCarousel();
-    }
-  });
+nextBtn.addEventListener('click', () => {
+  if (index < items.length - 1) {
+    index++;
+    updateCarousel();
+  }
+});
 
-  // Atualiza se a janela mudar de tamanho
-  window.addEventListener('resize', updateCarousel);
+prevBtn.addEventListener('click', () => {
+  if (index > 0) {
+    index--;
+    updateCarousel();
+  }
+});
+
+window.addEventListener('resize', updateCarousel);
+updateCarousel();
+
