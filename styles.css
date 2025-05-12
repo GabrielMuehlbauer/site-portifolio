@@ -53,7 +53,7 @@ p {
     margin: 10px;
     box-shadow: 0px 3px 0px rgba(26, 35, 54, 0.25);
     transition: transform 0.2s ease;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 #menu-button:hover {
