@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este é o portifólio digital de Gabriel Müehlbauer.">
+    <meta name="keywords" content="portifólio, site, programação, front-end, código">
+    <meta name="author" content="Gabriel Müehlbauer">
     <title>Gabriel Müehlbauer</title>
     <link rel="icon" href="files/images/logo-site.png" type="image/png">
     <link rel="stylesheet" href="reset.css">
@@ -16,6 +19,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -23,7 +30,7 @@
     <header>
         <!--navigation-->
         <button id="menu-button"><img src="files/icons/menu_250dp_252525_FILL0_wght400_GRAD0_opsz48.png"
-                alt=""></button>
+                alt="menu"></button>
         <div id="drawer" class="drawer">
             <nav>
                 <div class="title-nav">
@@ -32,21 +39,25 @@
                 </div>
                 <div class="internal_links">
                     <a href="#" class="home-nav"><img src="files/icons/home_250dp_252525_FILL0_wght400_GRAD0_opsz48.png"
-                            alt="">Início</a>
+                            alt="home">Início</a>
                     <a href="#container-about_me" class="about_me-nav"><img
-                            src="files/icons/person_250dp_252525_FILL0_wght400_GRAD0_opsz48.png" alt="">Sobre mim</a>
+                            src="files/icons/person_250dp_252525_FILL0_wght400_GRAD0_opsz48.png" alt="About Me">Sobre
+                        mim</a>
                     <a href="#skills" class="skills-nav"><img
                             src="files/icons/business_center_250dp_252525_FILL0_wght400_GRAD0_opsz48.png"
-                            alt="">Linguagens & Tecnologias</a>
-                    <a href="#my_projects" class="my_projects-nav"><img src="files/icons/folder_code_250dp_252525_FILL0_wght400_GRAD0_opsz48.png" alt="">Meus Projetos</a>
+                            alt="Skills">Linguagens & Tecnologias</a>
+                    <a href="#my_projects" class="my_projects-nav"><img
+                            src="files/icons/folder_code_250dp_252525_FILL0_wght400_GRAD0_opsz48.png"
+                            alt="My Projects">Meus
+                        Projetos</a>
                 </div>
                 <hr>
                 <div class="external_links">
                     <a href="https://github.com/GabrielMuehlbauer" class="git-hub-nav"><img
-                            src="files/icons/github_icon.png" alt="">Git Hub</a>
+                            src="files/icons/github_icon.png" alt="Git Hub Logo">Git Hub</a>
                     <a href="https://wa.me/5547992484016?text=Olá,%20me%20interessei%20pelo%20seu%20perfil%20como%20desenvolvedor.%20Gostaria%20de%20saber%20mais%20sobre%20seus%20projetos%20e%20habilidades."
                         class="contact-nav"><img src="files/icons/mail_900dp_252525_FILL0_wght400_GRAD0_opsz48.png"
-                            alt="">Entre em contato</a>
+                            alt="Contact">Entre em contato</a>
                 </div>
             </nav>
         </div>
@@ -55,26 +66,27 @@
         <picture>
             <source media="(max-width: 767px)" srcset="files/images/header-phone.webp">
             <source media="(max-width: 1023px)" srcset="files/images/header-tablet.webp">
-            <img src="files/images/header-laptop.webp" alt="Imagem de cabeçalho padrão">
+            <img src="files/images/header-laptop.webp" alt="Imagem de cabeçalho">
         </picture>
     </header>
 
     <!-- Introdução -->
     <main class="introduction">
         <!-- Introdução Principal -->
-        <div class="main_content">
+        <div class="main_content" data-aos="fade-up" data-aos-duration="1500">
             <p>Olá, seja muito bem vindo ao meu portifólio digital, me chamo Gabriel e fico muito honrado em ter você
-                como visitante do meu site! Aqui você verá os meus principais projetos e conhecimentos.</p>
+                como visitante do meu site! Aqui você verá os meus principais <b>projetos</b> e <b>conhecimentos.</b>
+            </p>
             <picture>
                 <source media="(max-width: 1023px)" srcset="files/images/decorativeCircles.webp">
-                <img src="files/images/four-forms_decorative.webp" alt="">
+                <img src="files/images/four-forms_decorative.webp" alt="Imagem decorativa">
             </picture>
         </div>
 
         <section id="container-about_me">
             <!-- Sobre mim -->
             <div class="background-about_me">
-                <div class="about_me">
+                <div class="about_me" data-aos="fade-up" data-aos-duration="1500">
                     <h2 class="Title_WhoAmI">Quem Sou Eu?</h2>
                     <div class="about_me-content">
                         <p>Sou um jovem dedicado a <b>fazer a diferença no meio em que estou inserido</b>, busco <b>ser
@@ -85,68 +97,75 @@
                             aprender
                             e contribuir
                             para uma sociedade tecnologicamente evoluída.</p>
-                        <img src="files/images/profilePicture_circle.png" alt="Este sou eu">
+                        <img data-aos="zoom-in" data-aos-duration="3000" src="files/images/profilePicture_circle.png"
+                            alt="Este sou eu">
                     </div>
                 </div>
             </div>
 
             <!-- Habilidades & Hobbies-->
-            <div class="hobbies">
+            <div class="hobbies" data-aos="fade-up" data-aos-duration="1000">
                 <h2 class="Title_hobbies">
                     Minhas Habilidades Gerais & Hobbies
                 </h2>
                 <div class="hobbies-content">
-                    <p>Gosto de aprender coisas novas e me aventurar em diferentes artes. Quando não estou criando
-                        sistemas ou estilizando interfaces com css, eu gosto de tocar teclado! Sirvo no louvor da minha
-                        igreja local, a Família Esperança.</p>
+                    <p>Gosto de <b>aprender coisas novas</b> e me aventurar em <b>diferentes artes</b>. Quando não estou
+                        criando
+                        sistemas ou estilizando interfaces com css, eu gosto de <b>tocar teclado</b>! Sirvo no louvor da
+                        minha
+                        igreja local, a <b>Família Esperança</b>.</p>
                     <img class="playing_img" src="files/images/fotoTocandoTeclado.webp"
                         alt="Esse sou eu tocando na minha igreja local">
-                    <p>Além de tocar teclado, eu também gosto de pintar de vez em quando, pinto quadros na minha
-                        igreja, vejo a Arte como um meio de anunciar uma mensagem com criatividade e beleza.</p>
+                    <p>Além de tocar teclado, eu também <b>gosto de pintar</b> de vez em quando, pinto quadros na minha
+                        igreja, vejo a Arte como um meio de anunciar uma mensagem com <b>criatividade</b> e
+                        <b>beleza</b>.</p>
                     <img class="paint_img" src="files/images/quadroCoracaoEnraizado.webp"
                         alt="Este é um quadro que eu pintei na minha igreja, fala sobre ter um coração enraizado na Palavra de Deus">
                 </div>
             </div>
         </section>
-        
-            <!-- Versículo -->
-            <div class="verse_container">
-                <div class="verse">
-                    <p class="verse-text">“Tudo o que<br>fizerem, façam<br><b>de todo o<br>coração</b>,<br>como para
-                        o<br>Senhor, e não<br>para
-                        os<br>homens”</p>
-                    <p class="verse-reference">Colossenses 3:23</p>
-                </div>
+
+        <!-- Versículo -->
+        <div class="verse_container" data-aos="fade-up" data-aos-duration="3000">
+            <div class="verse">
+                <p class="verse-text">“Tudo o que<br>fizerem, façam<br><b>de todo o<br>coração</b>,<br>como para
+                    o<br>Senhor, e não<br>para
+                    os<br>homens”</p>
+                <p class="verse-reference">Colossenses 3:23</p>
             </div>
+        </div>
     </main>
 
     <!-- Linguagens e Tecnologias-->
-    <section id="skills">
+    <section id="skills" data-aos="fade-up" data-aos-duration="1000">
         <div class="skills-content">
             <div class="main-skills">
                 <h2>Linguagens & Tecnologias</h2>
-                <p>Entendo que algo que todo desenvolvedor precisa ter é a vontade de sempre estar aprendendo e se
-                    desenvolvendo. Abaixo estão algumas linguagens & tecnologias que eu já tenho conhecimento e estou
+                <p>Entendo que algo que todo desenvolvedor precisa ter é a vontade de sempre estar <b>aprendendo</b> e
+                    <b>se
+                        desenvolvendo</b>. Abaixo estão algumas <b>linguagens & tecnologias</b> que eu já tenho
+                    conhecimento e estou
                     constantemente buscando aprender mais e mais!</p>
             </div>
-            <div class="tray_skills">
+            <div class="tray_skills" data-aos="fade-up" data-aos-duration="3000">
                 <div class="tray_skills_content">
                     <div class="left-column">
                         <div class="front-end">
                             <h3>Front-end</h3>
-                            <img src="files/images/html_900dp_252525_FILL0_wght400_GRAD0_opsz48.png" alt="">
-                            <img src="files/images/css_900dp_252525_FILL0_wght400_GRAD0_opsz48.png" alt="">
-                            <img src="files/images/javascript_900dp_252525_FILL0_wght400_GRAD0_opsz48.png" alt="">
+                            <img src="files/images/html_900dp_252525_FILL0_wght400_GRAD0_opsz48.png" alt="HTML">
+                            <img src="files/images/css_900dp_252525_FILL0_wght400_GRAD0_opsz48.png" alt="CSS">
+                            <img src="files/images/javascript_900dp_252525_FILL0_wght400_GRAD0_opsz48.png"
+                                alt="Javascript">
                         </div>
                         <div class="back-end">
                             <h3>Back-end</h3>
-                            <img src="files/images/cpp_logo.png" alt="">
+                            <img src="files/images/cpp_logo.png" alt="C++">
                         </div>
                     </div>
                     <div class="technologies">
                         <h3>Outras Tecnologias</h3>
-                        <img src="files/images/vscode_logo.png" alt="">
-                        <img src="files/images/figma_logo.png" alt="">
+                        <img src="files/images/vscode_logo.png" alt="Visual Studio Code">
+                        <img src="files/images/figma_logo.png" alt="Figma">
                     </div>
                 </div>
             </div>
@@ -158,37 +177,50 @@
         <div class="my_projects_content">
             <div class="my_projects_content_text">
                 <h2>Meus Projetos</h2>
-                <p>Aqui você encontrará os links para alguns dos meus principais projetos em diferentes linguagens.</p>
+                <p>Aqui você encontrará os links para alguns dos meus <b>principais projetos</b> em diferentes
+                    linguagens.
+                    Fique a vontade para acessar e entender cada código.</p>
             </div>
 
-            <div class="carousel">
-  <div class="carousel-track">
-    
-    <div class="carousel-item">
-      <a href="https://github.com/GabrielMuehlbauer/site-portifolio">
-        <img src="files/images/code_cover_website.webp" alt="Capa do Código do Site Portifólio">
-        <div class="description">
-          <h3>Site Portifólio</h3>
-          <p>Acesse todos os arquivos HTML, CSS e Javascript do meu portifólio digital do header ao footer.</p>
-        </div>
-      </a>
-    </div>
+            <div class="carousel" data-aos="fade-up" data-aos-duration="3000">
+                <div class="carousel-track">
 
-    <div class="carousel-item">
-      <a href="https://github.com/GabrielMuehlbauer/calcularFaltas">
-        <img src="files/images/code_cover_absences.webp" alt="Capa do Código do Calcular Faltas">
-        <div class="description">
-          <h3>Calcular Faltas</h3>
-          <p>Esse é o programa que apesar de ser um tanto cômico, pode ser muito útil se você é um estudante que andou faltando mais do que deveria.</p>
-        </div>
-      </a>
-    </div>
+                    <div class="carousel-item">
+                        <a href="https://github.com/GabrielMuehlbauer/site-portifolio">
+                            <img src="files/images/code_cover_website.webp" alt="Capa de Código do Site Portifólio">
+                            <div class="description">
+                                <h3>Site Portifólio</h3>
+                                <p>Este é o meu <b>site portifólio</b>! Todo o estilo e cores são originais. Inspirado
+                                    no
+                                    estilo Material Design do Google, este site trás um visual <b>moderno</b> e
+                                    <b>criativo</b>, com
+                                    cores suaves e harmônicas, além de um conjunto de fontes de alta legibilidade.</p>
+                            </div>
+                        </a>
+                    </div>
 
-  </div>
+                    <div class="carousel-item">
+                        <a href="https://github.com/GabrielMuehlbauer/calcularFaltas">
+                            <img src="files/images/code_cover_absences.webp"
+                                alt="Capa de Código do programa Calcular Faltas">
+                            <div class="description">
+                                <h3>Calcular Faltas</h3>
+                                <p>Se você é um jovem estudante que andou faltando mais do que deveria, não se preocupe,
+                                    <b>eu tenho a solução</b>! Esse programa pode calcular a quantidade de dias que você
+                                    pode
+                                    faltar com base na carga horária da matéria e no número de ausências já cometidas.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
 
-  <button class="carousel-button prev">‹</button>
-  <button class="carousel-button next">›</button>
-</div>
+                </div>
+                <div class="carousel-indicators"></div>
+
+
+                <button class="carousel-button prev">‹</button>
+                <button class="carousel-button next">›</button>
+            </div>
 
 
         </div>
@@ -212,6 +244,12 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

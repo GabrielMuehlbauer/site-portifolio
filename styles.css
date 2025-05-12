@@ -53,6 +53,7 @@ p {
     margin: 10px;
     box-shadow: 0px 3px 0px rgba(26, 35, 54, 0.25);
     transition: transform 0.2s ease;
+    z-index: 1000;
 }
 
 #menu-button:hover {
@@ -233,12 +234,8 @@ header img {
 
 .about_me img {
     width: 203px;
-    transition: transform 0.3s ease; /*animação de zoom*/
+    transition: transform 0.3s ease; 
     border-radius: 101.5px;
-}
-
-.about_me img:hover {
-    transform: scale(1.1); /*animação de zoom*/
 }
 
 /*Estilo Hobbies*/
@@ -516,7 +513,7 @@ header img {
   .carousel-button.next {
     right: 10px;
   }
-
+  
 
 /*Estilo Footer*/
 footer {
