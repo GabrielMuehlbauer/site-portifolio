@@ -27,10 +27,12 @@ body {
 
 button {
     cursor: url("files/cursor/cursor-pointer.png"), pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 a {
     cursor: url("files/cursor/cursor-pointer.png"), pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 h2 {
