@@ -25,12 +25,7 @@ body {
     cursor: url("files/cursor/cursor-default.png"), default; 
 }
 
-button {
-    cursor: url("files/cursor/cursor-pointer.png"), pointer;
-    -webkit-tap-highlight-color: transparent;
-}
-
-a {
+button, a {
     cursor: url("files/cursor/cursor-pointer.png"), pointer;
     -webkit-tap-highlight-color: transparent;
 }
@@ -51,7 +46,7 @@ p {
     position: fixed;
     background-color: #fafafa;
     border: 1px solid #252525;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: 10px;
     box-shadow: 0px 3px 0px rgba(26, 35, 54, 0.25);
     transition: transform 0.2s ease;
@@ -76,8 +71,8 @@ p {
     background-color: #fafafa;
     transition: left 0.3s ease;
     z-index: 10001;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px ;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px ;
   }
   
   .drawer.open {
@@ -237,7 +232,7 @@ header img {
 .about_me img {
     width: 203px;
     transition: transform 0.3s ease; 
-    border-radius: 101.5px;
+    border-radius: 50%;
 }
 
 /*Estilo Hobbies*/
@@ -267,14 +262,14 @@ header img {
 .playing_img {
     max-width: 250px;
     width: auto;
-    border-radius: 25px;
+    border-radius: 35px;
     margin: 20px 0 20px 0;
 }
 
 .paint_img {
     max-width: 250px;
     width: auto;
-    border-radius: 25px;
+    border-radius: 35px;
     margin: 20px 0 20px 0;
 }
 
@@ -286,14 +281,14 @@ header img {
     background-repeat: no-repeat;              /* Não repete a imagem */
     padding: 20px 10px 20px 10px;
     margin: 40px 15px 40px 15px;
-    border-radius: 30px;
+    border-radius: 35px;
 }
 
 .verse {
     margin: 50px auto;
     width: 270px;
     background-color: #e9f2ff;
-    border-radius: 30px;
+    border-radius: 35px;
     padding: 30px 20px 30px 20px;
 }
 
@@ -515,13 +510,11 @@ header img {
   .carousel-button.next {
     right: 10px;
   }
-  
 
 /*Estilo Footer*/
 footer {
     background-color: #1A2336;
-    padding: 15px;
-    margin-top: 50px;
+    padding: 35px 15px;
 }
 
 .contact_me {
@@ -542,15 +535,16 @@ footer {
     font-size: 16px;
     padding: 10px 30px 10px 30px;
     border-color: #000;
-    border-radius: 50px;
-    transition: background-color 0.5s ease;
-    border: 2px solid #252525;
+    border-radius: 15px;
+    transition: background-color 0.5s ease, border-radius 0.5s ease;;
+    border: 2px solid #fafafa;
 }
 
 .contact_me button:hover {
     background-color: #1A2336;
+    border-radius: 20px;
     color: #fafafa;
-    border-color: #fafafa;
+    border: 2px solid #fafafa;
 }
 
 .copyright {
