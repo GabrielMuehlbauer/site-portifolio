@@ -159,6 +159,46 @@ p {
     display: block;
   }  
 
+  .buttons_drawer {
+    padding: 10px;
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sauce Sans", sans-serif;
+    font-size: 20px;
+    color: #252525;
+  }
+
+  #cv-button {
+    background-color: #e3d7ff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
+  }
+
+  #cv-button:hover {
+    border: 1px solid #252525;
+    border-radius: 20px;
+  }
+
+  #close-drawer {
+  background-color: #CEE2FF;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  transition: transform 0.5s ease, border-radius 0.5s ease;
+}
+
+#close-drawer:hover {
+  border: 1px solid #252525;
+  border-radius: 20px;
+}
+
 /*Estilo Header*/
 header {
     position: relative;

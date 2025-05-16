@@ -2,6 +2,7 @@
 const menuButton = document.getElementById('menu-button');
 const drawer = document.getElementById('drawer');
 const overlay = document.getElementById('overlay');
+const closeDrawerButton = document.querySelector('#close-drawer');
 
 menuButton.addEventListener('click', () => {
   drawer.classList.add('open');
@@ -10,6 +11,13 @@ menuButton.addEventListener('click', () => {
 
 overlay.addEventListener('click', () => {
   drawer.classList.remove('open');
+  overlay.classList.remove('show');
+});
+
+closeDrawerButton.addEventListener('click', () => {
+  const drawer = document.querySelector('#drawer');
+  drawer.classList.remove('open');
+  const overlay = document.querySelector('#overlay');
   overlay.classList.remove('show');
 });
 
