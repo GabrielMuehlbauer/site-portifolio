@@ -2,7 +2,7 @@
 
 <p align=center">Um site criado por Gabriel Müehlbauer.</p>
 
-<img src="/files/images/code_cover_website.webp" align=center>
+<img src="/files/images/cabecalhoGithub-site-portifolio.jpg" align=center>
 
 <h2>🎯 Objetivo</h2>
 
