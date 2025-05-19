@@ -34,8 +34,8 @@
     /*Estilo About Me*/
     .background-about_me {
         background: linear-gradient(to bottom,
-                #fafafa 0%,
-                #fafafa 50%,
+                var(--background-color) 0%,
+                var(--background-color) 50%,
                 #f6f1ff 50%,
                 #f6f1ff 100%);
     }
@@ -75,7 +75,7 @@
     }
 
     .carousel-item:hover {
-        border: 1px solid #252525;
+        border: 1px solid var(--text-color);
     }
     
     .carousel-button {
@@ -200,7 +200,7 @@
     }
 
     .carousel-item:hover {
-        border: 1px solid #252525;
+        border: 1px solid var(--text-color);
     }
     
     .carousel-button {
