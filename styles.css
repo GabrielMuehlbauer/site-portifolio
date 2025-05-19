@@ -542,6 +542,45 @@ header img {
     right: 10px;
   }
 
+
+  #container-cv {
+    padding: 50px 20px;
+    justify-items: center;
+  }
+
+  .cv-content {
+    justify-content: center;
+    display: flex;
+    border: 1px solid #252525;
+    width: 200px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
+  }
+
+  .cv-content:hover {
+    border-radius: 35px;
+    background-color: #f6f1ff;
+  }
+
+  .cv-content a {
+    text-decoration: none;
+    display: block;
+    width: 135px;
+    color: #252525;
+    font-family: "Open Sauce Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .cv-content img {
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    float: right;
+  }
+
 /*Estilo Footer*/
 footer {
     background-color: #1A2336;
