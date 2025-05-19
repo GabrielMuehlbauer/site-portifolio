@@ -1,6 +1,6 @@
 <h1 align=center>Site Portifólio</h1>
 
-<p align=center">Um site criado por Gabriel Müehlbauer.</p>
+<p align=center border-radius:30px>Um site criado por Gabriel Müehlbauer.</p>
 
 <img src="/files/images/cabecalhoGithub-site-portifolio.jpg" align=center>
 
