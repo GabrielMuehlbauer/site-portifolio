@@ -6,7 +6,7 @@
 
 <h2>🎯 Objetivo</h2>
 
-<p>Nesse projeto, o objetivo era criar um site portifólio onde eu poderia escrever um pouco mais sobre mim e apresentar algumas das minhas principais habilidades e projetos.</p>
+<p>O objetivo era criar um site portifólio onde eu poderia escrever um pouco mais sobre mim e apresentar algumas das minhas principais habilidades e projetos.</p>
 
 <h2>🧰 Tecnologias</h2>
 
