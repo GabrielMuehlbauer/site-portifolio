@@ -22,7 +22,7 @@
 
 <h2>🎨 Estilo</h2>
 
-<p>Com elementos modernos e uma paleta de cores harmoniosa, esse site transmite um sensação de calma, segurança, profissionalismo e inovação. O estilo desse site foi uma mistura de muitos estilos, sobretudo nota-se bastante semelhança com o Material Design do Google, com alguns toques de originalidade e criatividade. </p>
+<p>Com elementos modernos e uma paleta de cores harmoniosa, esse site transmite uma sensação de calma, segurança, profissionalismo e inovação. O estilo desse site foi uma mistura de muitos estilos, sobretudo nota-se bastante semelhança com o Material Design do Google, com alguns toques de originalidade e criatividade. </p>
 
 <h2>🧠 Aprendizados</h2>
 
