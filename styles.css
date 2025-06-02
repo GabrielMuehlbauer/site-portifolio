@@ -475,7 +475,7 @@ header img {
 
 .carousel {
     position: relative;
-    width: 100%;
+    width: auto;
     max-width: 400px;
     overflow: hidden;
     margin: auto;
@@ -485,6 +485,7 @@ header img {
     display: flex;
     transition: transform 0.5s ease-in-out;
     gap: 20px;
+    width: 100%;
   }
   
   .carousel-item {

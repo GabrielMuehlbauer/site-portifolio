@@ -53,34 +53,6 @@
         padding: 0 30px 0 30px;
         gap: 40px;
     }
-
-    /*Estilo My Projects*/
-    .carousel {
-    width: auto;
-    height: 100%;
-  }
-
-    .carousel-track {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        transform: none !important;
-        justify-content: center;
-    }
-
-    .carousel-item {
-        border-radius: 35px;
-        width: 300px;
-        border: 1px solid transparent;
-    }
-
-    .carousel-item:hover {
-        border: 1px solid var(--text-color);
-    }
-    
-    .carousel-button {
-        display: none;
-    }
 }
 
 @media (min-width: 1320px) and (max-width: 1899px) {
@@ -178,34 +150,6 @@
     .technologies {
         margin-bottom: 20px;
     }
-    /*Estilo My Projects*/
-    .carousel {
-    width: auto;
-  }
-
-    .carousel-track {
-        display: flex;
-        flex-wrap: nowrap;
-        gap: 20px;
-        transform: none !important;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .carousel-item {
-        border-radius: 35px;
-        width: 400px;
-        border: 1px solid transparent;
-    }
-
-    .carousel-item:hover {
-        border: 1px solid var(--text-color);
-    }
-    
-    .carousel-button {
-        display: none;
-    }
 }
 
 
@@ -292,26 +236,4 @@
     .technologies {
         margin-bottom: 20px;
     }
-
-    /*Estilo My Projects*/
-    .carousel {
-    width: auto;
-  }
-
-    .carousel-track {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        transform: none !important;
-        justify-content: center;
-    }
-
-    .carousel-item {
-        width: 300px;
-    }
-    
-    .carousel-button {
-        display: none;
-    }
-
 }

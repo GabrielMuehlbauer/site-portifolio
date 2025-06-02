@@ -41,11 +41,6 @@ const items = document.querySelectorAll('.carousel-item');
 let index = 0;
 
 function updateCarousel() {
-  if (window.innerWidth >= 1023) {
-    track.style.transform = 'none'; // sem carrossel no desktop
-    return;
-  }
-
   const item = items[0];
   const slideWidth = item.getBoundingClientRect().width + 20;
   track.style.transform = `translateX(-${index * slideWidth}px)`;
