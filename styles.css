@@ -321,7 +321,7 @@ header img {
 
 /*Estilo Verse*/
 .verse_container {
-    background-image: url(files/images/background-image_2.webp);
+    background-image: url(files/images/background-image/background-image_3.webp);
     background-size: cover;                    /* Cobre toda a tela */
     background-position: center;               /* Centraliza a imagem */
     background-repeat: no-repeat;              /* Não repete a imagem */
@@ -333,7 +333,7 @@ header img {
 .verse {
     margin: 50px auto;
     width: 270px;
-    background-color: #e9f2ff;
+    background-color: var(--background-color);
     border-radius: 35px;
     padding: 30px 20px 30px 20px;
 }
@@ -582,13 +582,13 @@ header img {
     justify-content: center;
     text-decoration: none;
     display: flex;
-    gap: 20px;
+    gap: 15px;
   }
 
   .cv-content p {
     justify-content: center;
     display: flex;
-    width: 135px;
+    width: 115px;
     color: var(--text-color);
     font-family: "Open Sauce Sans", sans-serif;
     font-weight: 500;
