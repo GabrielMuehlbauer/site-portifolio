@@ -557,9 +557,10 @@ header img {
   }
 
 
-  #container-cv {
+  #container-final-buttons {
     padding: 50px 20px;
     justify-items: center;
+    gap: 20px;
   }
 
   .cv-content {
@@ -570,6 +571,7 @@ header img {
     padding: 30px 20px;
     border-radius: 20px;
     transition: transform 0.5s ease, border-radius 0.5s ease;
+    margin-bottom: 20px;
   }
 
   .cv-content:hover {
@@ -596,6 +598,46 @@ header img {
   }
 
   .cv-content img {
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    float: right;
+  }
+
+  .linkedin-button-content {
+    justify-content: center;
+    display: flex;
+    border: 1px solid var(--text-color);
+    width: 200px;
+    padding: 30px 20px;
+    border-radius: 20px;
+    transition: transform 0.5s ease, border-radius 0.5s ease;
+  }
+
+  .linkedin-button-content:hover {
+    border-radius: 35px;
+    background-color: #e9f2ff;
+  }
+
+  .linkedin-button-content a {
+    justify-content: center;
+    text-decoration: none;
+    display: flex;
+    gap: 15px;
+  }
+
+  .linkedin-button-content p {
+    justify-content: center;
+    display: flex;
+    width: 120px;
+    color: var(--text-color);
+    font-family: "Open Sauce Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .linkedin-button-content img {
     margin-left: auto;
     width: 50px;
     height: 50px;
