@@ -98,15 +98,28 @@ p {
 }
 
 hr {
-  border: none;
-  /* Remove a borda padrão */
-  border-top: 1px solid var(--text-color);
-  /* Adiciona uma borda superior personalizada */
-  width: 80%;
-  /* Define a largura da linha */
-  margin: 20px auto;
-  /* Centraliza a linha e adiciona espaçamento vertical */
+  border: none; /* Remove a borda padrão */
+  width: 80%;   /* Define a largura da linha */
+  /* Aumentamos a altura para acomodar a amplitude ainda maior da onda */
+  height: 7px;
+  margin: 20px auto; /* Centraliza a linha e adiciona espaçamento vertical */
+  background-color: var(--text-color); /* Esta será a cor da sua linha ondulada */
+
+  /* Define a máscara SVG para criar o efeito ondulado */
+  /* SVG atualizado: viewBox="0 0 20 7" e path d="M0 3.5 Q5 0.5 10 3.5 Q15 6.5 20 3.5" */
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 7"><path d="M0 3.5 Q5 0.5 10 3.5 Q15 6.5 20 3.5" fill="none" stroke="%23fff" stroke-width="1"/></svg>');
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 7"><path d="M0 3.5 Q5 0.5 10 3.5 Q15 6.5 20 3.5" fill="none" stroke="%23fff" stroke-width="1"/></svg>');
+
+  /* Define o tamanho de um ciclo da onda (largura de 20px, altura de 7px) */
+  /* Atualizado para corresponder às novas dimensões da viewBox do SVG */
+  -webkit-mask-size: 20px 7px;
+  mask-size: 20px 7px;
+
+  /* Repete a onda horizontalmente */
+  -webkit-mask-repeat: repeat-x;
+  mask-repeat: repeat-x;
 }
+
 
 .title-nav {
   padding: 15px 0 15px 0;
