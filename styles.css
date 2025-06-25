@@ -598,9 +598,8 @@ header img {
   width: 200px;
   padding: 30px 20px;
   border-radius: 20px;
-  transition: transform 0.5s ease, border-radius 0.5s ease, box-shadow 0.5s ease;
+  transition: background-color 0.5s ease, border-radius 0.5s ease;
   margin-bottom: 20px;
-  box-shadow: 0 0 0 0 transparent;
 }
 
 .cv-content:hover {
@@ -640,7 +639,7 @@ header img {
   width: 200px;
   padding: 30px 20px;
   border-radius: 20px;
-  transition: transform 0.5s ease, border-radius 0.5s ease;
+  transition: background-color 0.5s ease, border-radius 0.5s ease;
 }
 
 .linkedin-button-content:hover {
