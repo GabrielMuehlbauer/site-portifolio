@@ -150,7 +150,7 @@ hr {
   background-color: var(--background-color-2);
   border-radius: 15px;
   padding: 10px;
-  transition: transform 0.5s ease, border-radius 0.5s ease;
+  transition: transform 0.5s ease, border-radius 0.5s ease, background-color 0.5s ease;
   border: 1px solid transparent;
 }
 
@@ -197,7 +197,6 @@ hr {
   left: 0;
   width: 100%;
   padding: 30px 10px;
-  /* ajuste o valor para o seu layout */
 }
 
 .buttons_drawer {
