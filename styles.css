@@ -31,25 +31,25 @@ b {
 body {
   background-color: var(--background-color);
   font-family: "Poppins", sans-serif;
-  cursor: url("files/cursor/cursor-default.png"), default;
+  cursor: url("files/cursor/Arrow.svg"), default;
 }
 
 button,
 a {
-  cursor: url("files/cursor/cursor-pointer.png"), pointer;
+  cursor: url("files/cursor/Pointer.svg"), pointer;
   -webkit-tap-highlight-color: transparent;
 }
 
 h2 {
-  cursor: url("files/cursor/cursor-text.png"), text;
+  cursor: url("files/cursor/Text.svg"), text;
 }
 
 h3 {
-  cursor: url("files/cursor/cursor-text.png"), text;
+  cursor: url("files/cursor/Text.svg"), text;
 }
 
 p {
-  cursor: url("files/cursor/cursor-text.png"), text;
+  cursor: url("files/cursor/Text.svg"), text;
 }
 
 #menu-button {
@@ -150,7 +150,7 @@ hr {
   background-color: var(--background-color-2);
   border-radius: 15px;
   padding: 10px;
-  transition: transform 0.5s ease, border-radius 0.5s ease, background-color 0.5s ease;
+  transition: transform 0.5s ease, border-radius 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
   border: 1px solid transparent;
 }
 
@@ -159,6 +159,7 @@ hr {
   border: 1px solid var(--text-color);
   border-radius: 20px;
   transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .drawer .external_links a:hover {
@@ -166,6 +167,7 @@ hr {
   border: 1px solid var(--text-color);
   border-radius: 20px;
   transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .drawer a img {
@@ -215,12 +217,13 @@ hr {
   font-weight: 500;
   border-radius: 15px;
   border: 1px solid transparent;
-  transition: transform 0.5s ease, border-radius 0.5s ease;
+  transition: transform 0.5s ease, border-radius 0.5s ease, box-shadow 0.5s ease;
 }
 
 #close-drawer:hover {
   border: 1px solid var(--text-color);
   border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /*Estilo Header*/
@@ -464,11 +467,12 @@ header img {
   margin: 10px;
   border: 1px solid var(--text-color);
   border-radius: 20px;
-  transition: transform 0.5s ease, border-radius 0.5s ease;
+  transition: transform 0.5s ease, border-radius 0.5s ease, box-shadow 0.5s ease;
 }
 
 .tray_skills img:hover {
   border-radius: 35px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /*Estilo My Projects*/
@@ -597,13 +601,14 @@ header img {
   width: 200px;
   padding: 30px 20px;
   border-radius: 20px;
-  transition: background-color 0.5s ease, border-radius 0.5s ease;
+  transition: background-color 0.5s ease, border-radius 0.5s ease, box-shadow 0.5s ease;
   margin-bottom: 20px;
 }
 
 .cv-content:hover {
   border-radius: 35px;
   background-color: #f6f1ff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cv-content a {
@@ -638,12 +643,14 @@ header img {
   width: 200px;
   padding: 30px 20px;
   border-radius: 20px;
-  transition: background-color 0.5s ease, border-radius 0.5s ease;
+  transition: background-color 0.5s ease, border-radius 0.5s ease, box-shadow 0.5s ease;
+  margin-bottom: 20px;
 }
 
 .linkedin-button-content:hover {
   border-radius: 35px;
   background-color: #e9f2ff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .linkedin-button-content a {
