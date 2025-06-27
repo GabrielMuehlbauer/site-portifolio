@@ -221,7 +221,7 @@ hr {
 }
 
 #close-drawer:hover {
-  border: 1px solid var(--text-color);
+  border: 1px solid #e3d7ff;
   border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
