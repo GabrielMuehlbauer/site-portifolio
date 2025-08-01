@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Open Sauce Sans";
-  src: url(assets/fonts/Open_Sauce/OpenSauceSans-Regular.ttf);
+  src: url(/assets/fonts/Open_Sauce/OpenSauceSans-Regular.ttf);
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Open Sauce Sans";
-  src: url(assets/fonts/Open_Sauce/OpenSauceSans-Black.ttf);
+  src: url(/assets/fonts/Open_Sauce/OpenSauceSans-Black.ttf);
   font-weight: 900;
 }
 
