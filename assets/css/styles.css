@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Open Sauce Sans";
-  src: url(assets/fonts/Open_Sauce/OpenSauceSans-Regular.ttf);
+  src: url(https://gabrielmuehlbauer.github.io/site-portifolio/assets/fonts/Open_Sauce/OpenSauceSans-Regular.ttf);
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Open Sauce Sans";
-  src: url(assets/fonts/Open_Sauce/OpenSauceSans-Black.ttf);
+  src: url(https://gabrielmuehlbauer.github.io/site-portifolio/assets/fonts/Open_Sauce/OpenSauceSans-Black.ttf);
   font-weight: 900;
 }
 
@@ -348,7 +348,7 @@ header img {
 
 /*Estilo Verse*/
 .verse_container {
-  background-image: url(/assets/images/background-image_1.webp);
+  background-image: url(https://gabrielmuehlbauer.github.io/site-portifolio/assets/images/background-image_1.webp);
   background-size: cover;
   /* Cobre toda a tela */
   background-position: center;
