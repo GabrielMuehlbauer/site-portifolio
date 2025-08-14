@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Open Sauce Sans";
-  src: url(https://gabrielmuehlbauer.github.io/site-portifolio/assets/fonts/Open_Sauce/OpenSauceSans-Regular.ttf);
+  src: url(../fonts/Open_Sauce/OpenSauceSans-Regular.ttf);
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Open Sauce Sans";
-  src: url(https://gabrielmuehlbauer.github.io/site-portifolio/assets/fonts/Open_Sauce/OpenSauceSans-Black.ttf);
+  src: url(../fonts/Open_Sauce/OpenSauceSans-Black.ttf);
   font-weight: 900;
 }
 
@@ -31,25 +31,25 @@ b {
 body {
   background-color: var(--background-color);
   font-family: "Poppins", sans-serif;
-  cursor: url("/assets/cursor/arrow.svg"), default;
+  cursor: url("../cursor/arrow.svg"), default;
 }
 
 button,
 a {
-  cursor: url("/assets/cursor/pointer.svg"), pointer;
+  cursor: url("../cursor/pointer.svg"), pointer;
   -webkit-tap-highlight-color: transparent;
 }
 
 h2 {
-  cursor: url("/assets/cursor/text.svg"), text;
+  cursor: url("../cursor/text.svg"), text;
 }
 
 h3 {
-  cursor: url("/assets/cursor/text.svg"), text;
+  cursor: url("../cursor/text.svg"), text;
 }
 
 p {
-  cursor: url("/assets/cursor/text.svg"), text;
+  cursor: url("../cursor/text.svg"), text;
 }
 
 #menu-button {
@@ -348,7 +348,7 @@ header img {
 
 /*Estilo Verse*/
 .verse_container {
-  background-image: url(https://gabrielmuehlbauer.github.io/site-portifolio/assets/images/background-image_1.webp);
+  background-image: url(../images/background-image_1.webp);
   background-size: cover;
   /* Cobre toda a tela */
   background-position: center;
