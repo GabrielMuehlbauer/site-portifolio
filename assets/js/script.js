@@ -4,32 +4,28 @@ const drawer = document.getElementById('drawer');
 const overlay = document.getElementById('overlay');
 const closeDrawerButton = document.querySelector('#close-drawer');
 
-menuButton.addEventListener('click', () => {
+function openDrawer() {
   drawer.classList.add('open');
   overlay.classList.add('show');
-});
+}
 
-overlay.addEventListener('click', () => {
+function closeDrawer() {
   drawer.classList.remove('open');
   overlay.classList.remove('show');
-});
+}
 
-closeDrawerButton.addEventListener('click', () => {
-  const drawer = document.querySelector('#drawer');
-  drawer.classList.remove('open');
-  const overlay = document.querySelector('#overlay');
-  overlay.classList.remove('show');
-});
+menuButton.addEventListener('click', openDrawer);
+
+overlay.addEventListener('click', closeDrawer);
+
+closeDrawerButton.addEventListener('click', closeDrawer);
 
 // Seleciona todos os links dentro da gaveta
 const drawerLinks = document.querySelectorAll('#drawer a');
 
 // Adiciona um evento de clique a cada link
 drawerLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    drawer.classList.remove('open');
-    overlay.classList.remove('show');
-  });
+  link.addEventListener('click', closeDrawer);
 });
 
 /*Carrosel do My Projects*/
@@ -47,17 +43,13 @@ function updateCarousel() {
 }
 
 nextBtn.addEventListener('click', () => {
-  if (index < items.length - 1) {
-    index++;
-    updateCarousel();
-  }
+  index = (index + 1) % items.length;
+  updateCarousel();
 });
 
 prevBtn.addEventListener('click', () => {
-  if (index > 0) {
-    index--;
-    updateCarousel();
-  }
+  index = (index - 1 + items.length) % items.length;
+  updateCarousel();
 });
 
 window.addEventListener('resize', updateCarousel);
