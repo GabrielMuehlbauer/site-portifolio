@@ -185,7 +185,7 @@ hr {
 }
 
 .drawer .internal_links a:hover {
-  background-color: #f6f1ff;
+  background-color: #cee2ff;
   border: 1px solid var(--text-color);
   border-radius: 20px;
   transform: scale(1.05);
@@ -193,7 +193,7 @@ hr {
 }
 
 .drawer .external_links a:hover {
-  background-color: #e9f2ff;
+  background-color: #cee2ff;
   border: 1px solid var(--text-color);
   border-radius: 20px;
   transform: scale(1.05);
@@ -241,7 +241,7 @@ hr {
 }
 
 #close-drawer {
-  background-color: #f6f1ff;
+  background-color: #9bc3ff;
   border: none;
   padding: 10px 20px;
   font-weight: 500;
@@ -254,7 +254,7 @@ hr {
   border: 1px solid var(--text-color);
   border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  background-color: #e3d7ff;
+  background-color: #9bc3ff;
 }
 
 /*Estilo Header*/
@@ -599,7 +599,7 @@ header img {
 }
 
 .experience-header .company a:hover {
-  color: #0d6efd;
+  color: #9bc3ff;
 }
 
 .experience-period {
@@ -643,6 +643,7 @@ header img {
   max-width: 1000px;
   height: auto;
   margin: 30px auto;
+  transition: all 0.3s;
 }
 
 .carousel {
@@ -651,6 +652,12 @@ header img {
   max-width: 400px;
   overflow: hidden;
   margin: auto;
+  border-radius: 35px;
+  transition: all 0.3s ease-in-out !important;
+}
+
+.carousel:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .carousel-track {
@@ -667,6 +674,7 @@ header img {
   background-color: var(--background-color);
   border-radius: 35px;
   border: 1px solid var(--text-color);
+  transition: all 0.3s;
 }
 
 .carousel-item img {
@@ -853,9 +861,9 @@ footer {
 }
 
 .contact_me button:hover {
-  background-color: #1A2336;
+  background-color: #9bc3ff;
   border-radius: 20px;
-  color: var(--background-color);
+  color: var(--text-color);
   border: 2px solid var(--background-color);
 }
 
