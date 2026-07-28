@@ -88,6 +88,11 @@
         height: 450px;
     }
 
+    /*Estilo Experiência Profissional*/
+    #professional-experience {
+        padding: 50px 30px;
+    }
+
     .about_me-content {
         padding: 0;
     }
@@ -173,6 +178,11 @@
     /*Estilo About Me*/
     .about_me {
         margin: 0;
+    }
+
+    /*Estilo Experiência Profissional*/
+    #professional-experience {
+        padding: 50px 30px;
     }
 
     .about_me-content {

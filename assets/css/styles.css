@@ -533,6 +533,89 @@ header img {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/*Estilo Experiência Profissional*/
+#professional-experience {
+  padding: 50px 20px;
+  background-color: #9bc3ff;
+}
+
+.main-experience h2 {
+  font-family: "Open Sauce Two", sans-serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 30px;
+  margin: 15px 0 15px 0;
+  color: var(--text-color);
+}
+
+.main-experience p {
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 20px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  color: var(--text-color);
+}
+
+.experience-list {
+  max-width: 800px;
+  margin: 40px auto 0;
+}
+
+.experience-item {
+  background-color: var(--background-color-2);
+  border: 1px solid var(--text-color);
+  border-radius: 35px;
+  padding: 25px 30px;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.experience-header h3 {
+  font-family: "Open Sauce Two", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--text-color);
+}
+
+.experience-header .company,
+.experience-header .company a {
+  font-family: "Open Sauce Two", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+.experience-header .company a:hover {
+  color: #0d6efd;
+}
+
+.experience-period {
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 14px;
+  color: #7A7F8C;
+  margin-bottom: 15px;
+}
+
+.experience-description {
+  font-family: "Google Sans Flex", sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 20px;
+  color: var(--text-color);
+}
+
 /*Estilo My Projects*/
 #my_projects {
   background-color: #CEE2FF;
