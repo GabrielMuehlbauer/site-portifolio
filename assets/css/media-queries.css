@@ -36,12 +36,11 @@
         background: linear-gradient(to bottom,
                 var(--background-color) 0%,
                 var(--background-color) 50%,
-                #f6f1ff 50%,
-                #f6f1ff 100%);
+                #cee2ff 50%,
+                #cee2ff 100%);
     }
 
     .about_me {
-        background-color: #CEE2FF;
         margin: 25px 15px 0px 15px;
         padding: 50px 10px 50px 10px;
         border-radius: 35px;
@@ -86,6 +85,7 @@
         margin: 0px;
         padding: 50px 30px 50px 30px;
         text-align: center;
+        height: 450px;
     }
 
     .about_me-content {
@@ -107,6 +107,7 @@
     .hobbies {
         border-radius: 35px;
         padding: 40px 45px 40px 45px;
+        border: 1px solid var(--text-color);
     }
 
     .Title_hobbies {
@@ -115,7 +116,7 @@
 
     .hobbies-content {
         overflow-y: scroll;
-        height: 370px;
+        height: 350px;
     }
 
     .hobbies-content p {
