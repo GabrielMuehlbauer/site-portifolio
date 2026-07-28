@@ -176,8 +176,13 @@
     }
 
     /*Estilo About Me*/
+    .background-about_me {
+        background: none;
+    }
+
     .about_me {
         margin: 0;
+        height: 450px;
     }
 
     /*Estilo Experiência Profissional*/
@@ -204,6 +209,7 @@
     .hobbies {
         border-radius: 35px;
         padding: 40px 45px 40px 45px;
+    
     }
 
     .Title_hobbies {
