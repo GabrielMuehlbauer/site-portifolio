@@ -14,13 +14,6 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/media-queries.css">
 
-    <!-- link para fonte Poppins (Google Fonts) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-
     <!-- AOS CSS -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
@@ -46,9 +39,9 @@
 </head>
 
 <body>
-    <!-- Header -->
+    <!-- Início: Cabeçalho -->
     <header>
-        <!--navigation-->
+        <!-- Início: Navegação do menu lateral (Drawer) -->
         <button id="menu-button"><img src="assets/icons/menu_250dp_252525_FILL0_wght400_GRAD0_opsz48.png"
                 alt="menu"></button>
         <div id="drawer" class="drawer">
@@ -92,6 +85,7 @@
             </nav>
         </div>
         <div id="overlay" class="overlay"></div>
+        <!-- Fim: Navegação do menu lateral (Drawer) -->
 
         <div class="header-content" data-aos="fade-up" data-aos-duration="1500">
             <div class="header-text">
@@ -100,22 +94,30 @@
             </div>
         </div>
     </header>
+    <!-- Fim: Cabeçalho -->
 
-    <!-- Introdução -->
+    <!-- Início: Conteúdo Principal -->
     <main class="introduction">
-        <!-- Introdução Principal -->
+        <!-- Início: Seção de Introdução -->
         <div class="main_content" data-aos="fade-up" data-aos-duration="1500">
-            <p>Olá, seja muito bem vindo ao meu portfólio digital, me chamo Gabriel e fico muito honrado em ter você
-                como visitante do meu site! Aqui você verá os meus principais <b>projetos</b> e <b>conhecimentos.</b>
+            <div class="slogan">
+                <div class="slogan-content">
+                    <h3 class="slogan-text">Desenvolvimeto com propósito, criatividade e excelência.</h3>
+                    <hr>
+                </div>
+            </div>
+
+            <p>Olá, seja muito bem vindo ao <b>Site do Gabriel</b>, o meu site portfólio, eu sou Gabriel e fico muito
+                feliz em te receber
+                como visitante do meu site! Aqui você conhecerá um pouco sobre mim, meus projetos, habilidades e
+                experiências profissionais. Sinta-se a vontade para explorar o site e conhecer mais sobre o meu trabalho
+                como desenvolvedor full stack.
             </p>
-            <picture>
-                <source media="(max-width: 1023px)" srcset="assets/images/decorativeCircles.webp">
-                <img src="assets/images/four-forms_decorative.webp" alt="Imagem decorativa">
-            </picture>
         </div>
+        <!-- Fim: Seção de Introdução -->
 
         <section id="container-about_me">
-            <!-- Sobre mim -->
+            <!-- Início: Seção Sobre Mim -->
             <div class="background-about_me">
                 <div class="about_me" data-aos="fade-up" data-aos-duration="1500">
                     <h2 class="Title_WhoAmI">Quem Sou Eu?</h2>
@@ -131,8 +133,9 @@
                     </div>
                 </div>
             </div>
+            <!-- Fim: Seção Sobre Mim -->
 
-            <!-- Habilidades & Hobbies-->
+            <!-- Início: Seção Habilidades & Hobbies -->
             <div class="hobbies" data-aos="fade-up" data-aos-duration="1000">
                 <h2 class="Title_hobbies">
                     Minhas Habilidades Gerais & Hobbies
@@ -152,9 +155,10 @@
                         alt="Este é um quadro que eu pintei na minha igreja, fala sobre ter um coração enraizado na Palavra de Deus">
                 </div>
             </div>
+            <!-- Fim: Seção Habilidades & Hobbies -->
         </section>
 
-        <!-- Versículo -->
+        <!-- Início: Seção Versículo -->
         <div class="verse_container" data-aos="fade-up" data-aos-duration="3000">
             <div class="verse">
                 <p class="verse-text">“Tudo o que<br>fizerem, façam<br><b>de todo o<br>coração</b>,<br>como para
@@ -163,9 +167,11 @@
                 <p class="verse-reference">Colossenses 3:23</p>
             </div>
         </div>
+        <!-- Fim: Seção Versículo -->
     </main>
+    <!-- Fim: Conteúdo Principal -->
 
-    <!-- Linguagens e Tecnologias-->
+    <!-- Início: Seção Linguagens e Tecnologias -->
     <section id="skills">
         <div class="skills-content" data-aos="fade-up" data-aos-duration="1000">
             <div class="main-skills">
@@ -206,8 +212,9 @@
             </div>
         </div>
     </section>
+    <!-- Fim: Seção Linguagens e Tecnologias -->
 
-    <!-- Experiência Profissional -->
+    <!-- Início: Seção Experiência Profissional -->
     <section id="professional-experience">
         <div class="experience-content" data-aos="fade-up" data-aos-duration="1000">
             <div class="main-experience">
@@ -231,8 +238,9 @@
             </div>
         </div>
     </section>
+    <!-- Fim: Seção Experiência Profissional -->
 
-    <!-- Meus Projetos -->
+    <!-- Início: Seção Meus Projetos -->
     <section id="my_projects">
         <div class="my_projects_content">
             <div class="my_projects_content_text">
@@ -316,7 +324,9 @@
 
         </div>
     </section>
+    <!-- Fim: Seção Meus Projetos -->
 
+    <!-- Início: Seção de Botões Finais -->
     <section id="container-final-buttons">
         <div class="cv-content">
             <a href="assets/docs/Gabriel_Felipe_Müehlbauer_Currículo  (1).pdf" target="_blank">
@@ -333,8 +343,9 @@
             </a>
         </div>
     </section>
+    <!-- Fim: Seção de Botões Finais -->
 
-    <!-- Rodapé -->
+    <!-- Início: Rodapé -->
     <footer>
         <div class="contact_me">
             <p>Deseja entrar em contato?</p>
@@ -350,6 +361,7 @@
             <h3>Gabriel Müehlbauer</h3>
         </div>
     </footer>
+    <!-- Fim: Rodapé -->
 
     <script src="assets/js/script.js"></script>
 

@@ -1,43 +1,32 @@
+/* ==========================================================================
+   Tablet (768px - 1023px)
+   ========================================================================== */
 @media (min-width: 768px) and (max-width: 1023px) {
 
-    /*Estilo Main Content*/
+    /* --- Conteúdo Principal --- */
     .main_content p {
-        padding: 150px 15px 150px 100px;
-    }
-
-    .main_content img {
-        width: 144.67px;
-        height: auto;
-        padding: 0 70px 0 70px;
+        max-width: 768px;
     }
 }
 
+/* ==========================================================================
+   Desktop Pequeno (1024px - 1319px)
+   ========================================================================== */
 @media (min-width: 1024px) and (max-width: 1319px) {
 
-    /*Estilo Main Content*/
+    /* --- Conteúdo Principal --- */
     .main_content {
         display: flex;
         margin: 25px 0 25px 0;
     }
 
-    .main_content p {
-        padding: 50px 200px 50px 100px;
-    }
-
-    .main_content img {
-        width: 250px;
-        height: auto;
-        float: right;
-        padding: 0 100px 0 100px;
-    }
-
-    /*Estilo About Me*/
+    /* --- Sobre Mim --- */
     .background-about_me {
         background: linear-gradient(to bottom,
-                var(--background-color) 0%,
-                var(--background-color) 50%,
-                #cee2ff 50%,
-                #cee2ff 100%);
+                var(--color-almost-white) 0%,
+                var(--color-almost-white) 50%,
+                var(--color-pale-blue) 50%,
+                var(--color-pale-blue) 100%);
     }
 
     .about_me {
@@ -54,21 +43,20 @@
     }
 }
 
+/* ==========================================================================
+   Desktop Médio (1320px - 1899px)
+   ========================================================================== */
 @media (min-width: 1320px) and (max-width: 1899px) {
 
-    /*Estilo Drawer*/
+    /* --- Menu Lateral (Drawer) --- */
     .drawer a {
         font-size: 16px;
     }
 
-    /*Estilo Main Content*/
+    /* --- Conteúdo Principal --- */
     .main_content {
         display: flex;
         margin: 25px 0 25px 0;
-    }
-
-    .main_content p {
-        padding: 100px 250px 100px 250px;
     }
 
     .main_content img {
@@ -76,7 +64,7 @@
         padding: 0 150px 0 150px;
     }
 
-    /*Estilo About Me*/
+    /* --- Sobre Mim --- */
     .background-about_me {
         background: none;
     }
@@ -86,9 +74,15 @@
         padding: 50px 30px 50px 30px;
         text-align: center;
         height: 450px;
+        box-shadow: 0px 5px 10px #35353533;
     }
 
-    /*Estilo Experiência Profissional*/
+    .hobbies {
+        border: 1px solid var(--color-dark-gray) !important;
+        box-shadow: 0px 5px 10px #35353533;
+    }
+
+    /* --- Experiência Profissional --- */
     #professional-experience {
         padding: 50px 30px;
     }
@@ -97,12 +91,12 @@
         padding: 0;
     }
 
-    /*Estilo Verse*/
+    /* --- Versículo --- */
     .verse_container {
         margin: 40px 30px 40px 30px;
     }
 
-    /*Estilo Hobbies*/
+    /* --- Hobbies --- */
     #container-about_me {
         display: flex;
         margin: 0 30px 0 30px;
@@ -128,7 +122,7 @@
         padding: 0 15px 0 15px;
     }
 
-    /*Estilo Skills*/
+    /* --- Habilidades (Skills) --- */
     .tray_skills_content {
         display: flex;
         justify-content: space-between;
@@ -136,7 +130,7 @@
         text-align: center;
     }
 
-    /* Coluna da esquerda */
+    /* --- Coluna da Esquerda --- */
     .left-column {
         display: flex;
         flex-direction: column;
@@ -144,13 +138,13 @@
         padding: 10px;
     }
 
-    /* Coluna da direita */
+    /* --- Coluna da Direita --- */
     .technologies {
         flex: 1;
         padding: 10px;
     }
 
-    /* Sub-estilos */
+    /* --- Sub-estilos das Habilidades --- */
     .front-end,
     .back-end,
     .technologies {
@@ -159,23 +153,17 @@
 }
 
 
+/* ==========================================================================
+   Desktop Grande (1900px e acima)
+   ========================================================================== */
 @media (min-width: 1900px) {
 
-    /*Estilo Drawer*/
+    /* --- Menu Lateral (Drawer) --- */
     .drawer a {
         font-size: 16px;
     }
 
-    .main_content p {
-        padding: 65px 15px 0 400px;
-    }
-
-    .main_content img {
-        width: 300px;
-        padding: 0 400px 0 600px;
-    }
-
-    /*Estilo About Me*/
+    /* --- Sobre Mim --- */
     .background-about_me {
         background: none;
     }
@@ -185,7 +173,7 @@
         height: 450px;
     }
 
-    /*Estilo Experiência Profissional*/
+    /* --- Experiência Profissional --- */
     #professional-experience {
         padding: 50px 30px;
     }
@@ -194,12 +182,12 @@
         padding: 0;
     }
 
-    /*Estilo Verse*/
+    /* --- Versículo --- */
     .verse_container {
         margin: 40px 30px 40px 30px;
     }
 
-    /*Estilo Hobbies*/
+    /* --- Hobbies --- */
     #container-about_me {
         display: flex;
         margin: 0 30px 0 30px;
@@ -225,7 +213,7 @@
         padding: 0 15px 0 15px;
     }
 
-    /*Estilo Skills*/
+    /* --- Habilidades (Skills) --- */
     .tray_skills_content {
         display: flex;
         justify-content: space-between;
@@ -233,7 +221,7 @@
         text-align: center;
     }
 
-    /* Coluna da esquerda */
+    /* --- Coluna da Esquerda --- */
     .left-column {
         display: flex;
         flex-direction: column;
@@ -241,13 +229,13 @@
         padding: 10px;
     }
 
-    /* Coluna da direita */
+    /* --- Coluna da Direita --- */
     .technologies {
         flex: 1;
         padding: 10px;
     }
 
-    /* Sub-estilos */
+    /* --- Sub-estilos das Habilidades --- */
     .front-end,
     .back-end,
     .technologies {

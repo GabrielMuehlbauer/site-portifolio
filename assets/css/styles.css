@@ -41,17 +41,23 @@
 }
 
 :root {
-  --text-color: #252525;
-  --background-color: #fafafa;
-  --background-color-2: #ffffff;
-  --primary-color: #CEE2FF;
-  --secondary-color: #1A2336;
-  --tertiary-color: #f6f1ff;
+  /* Dark Tones */
+  --color-dark-gray: #353535;
+  --color-deep-navy: #222E47;
+  --color-muted-blue: #394A6F;
+
+  /* Light & Accent Tones */
+  --color-soft-blue: #9BC3FF;
+  --color-pale-blue: #CEE2FF;
+
+  /* Neutrals / Backgrounds */
+  --color-grayish-white: #F3F6F8;
+  --color-almost-white: #FAFAFA;
 }
 
 ::selection {
-  background-color: var(--text-color);
-  color: #CEE2FF;
+  background-color: var(--color-dark-gray);
+  color: var(--color-pale-blue);
 }
 
 b {
@@ -59,7 +65,7 @@ b {
 }
 
 body {
-  background-color: var(--background-color);
+  background-color: var(--color-almost-white);
   font-family: "Google Sans Flex", sans-serif;
   cursor: url("../cursor/arrow.svg"), default;
 }
@@ -84,8 +90,8 @@ p {
 
 #menu-button {
   position: fixed;
-  background-color: var(--background-color);
-  border: 1px solid var(--text-color);
+  background-color: var(--color-almost-white);
+  border: 1px solid var(--color-dark-gray);
   border-radius: 15px;
   margin: 10px;
   box-shadow: 0 0 0 0 transparent;
@@ -110,7 +116,7 @@ p {
   left: -350px;
   width: 350px;
   height: 100%;
-  background-color: var(--background-color);
+  background-color: var(--color-almost-white);
   transition: left 0.3s ease;
   z-index: 10001;
   border-top-right-radius: 35px;
@@ -128,26 +134,9 @@ p {
 }
 
 hr {
-  border: none; /* Remove a borda padrão */
-  width: 80%;   /* Define a largura da linha */
-  /* Aumentamos a altura para acomodar a amplitude ainda maior da onda */
-  height: 7px;
-  margin: 20px auto; /* Centraliza a linha e adiciona espaçamento vertical */
-  background-color: var(--text-color); /* Esta será a cor da sua linha ondulada */
-
-  /* Define a máscara SVG para criar o efeito ondulado */
-  /* SVG atualizado: viewBox="0 0 20 7" e path d="M0 3.5 Q5 0.5 10 3.5 Q15 6.5 20 3.5" */
-  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 7"><path d="M0 3.5 Q5 0.5 10 3.5 Q15 6.5 20 3.5" fill="none" stroke="%23fff" stroke-width="1"/></svg>');
-  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 7"><path d="M0 3.5 Q5 0.5 10 3.5 Q15 6.5 20 3.5" fill="none" stroke="%23fff" stroke-width="1"/></svg>');
-
-  /* Define o tamanho de um ciclo da onda (largura de 20px, altura de 7px) */
-  /* Atualizado para corresponder às novas dimensões da viewBox do SVG */
-  -webkit-mask-size: 20px 7px;
-  mask-size: 20px 7px;
-
-  /* Repete a onda horizontalmente */
-  -webkit-mask-repeat: repeat-x;
-  mask-repeat: repeat-x;
+  border: 0;
+  border-top: 15px dotted var(--color-deep-navy);
+  width: 90%;
 }
 
 
@@ -159,14 +148,14 @@ hr {
   font-family: "Open Sauce Two", sans-serif;
   font-size: 25px;
   font-weight: 800;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
 }
 
 .title-nav h5 {
   font-family: "Open Sauce Two", sans-serif;
   font-size: 15px;
   font-weight: 100;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
 }
 
 .drawer a {
@@ -174,10 +163,10 @@ hr {
   align-items: center;
   font-family: "Open Sauce Two", sans-serif;
   font-size: 18px;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
   text-decoration-line: none;
   margin: 10px 0 10px 0;
-  background-color: var(--background-color-2);
+  background-color: var(--color-grayish-white);
   border-radius: 15px;
   padding: 10px;
   transition: transform 0.5s ease, border-radius 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
@@ -185,16 +174,16 @@ hr {
 }
 
 .drawer .internal_links a:hover {
-  background-color: #cee2ff;
-  border: 1px solid var(--text-color);
+  background-color: var(--color-pale-blue);
+  border: 1px solid var(--color-dark-gray);
   border-radius: 20px;
   transform: scale(1.05);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .drawer .external_links a:hover {
-  background-color: #cee2ff;
-  border: 1px solid var(--text-color);
+  background-color: var(--color-pale-blue);
+  border: 1px solid var(--color-dark-gray);
   border-radius: 20px;
   transform: scale(1.05);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -213,7 +202,7 @@ hr {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #35353580;
   display: none;
   backdrop-filter: blur(5px);
   z-index: 999;
@@ -237,11 +226,11 @@ hr {
   justify-content: center;
   font-family: "Open Sauce Two", sans-serif;
   font-size: 20px;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
 }
 
 #close-drawer {
-  background-color: #9bc3ff;
+  background-color: var(--color-soft-blue);
   border: none;
   padding: 10px 20px;
   font-weight: 500;
@@ -251,13 +240,15 @@ hr {
 }
 
 #close-drawer:hover {
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--color-dark-gray);
   border-radius: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  background-color: #9bc3ff;
+  background-color: var(--color-soft-blue);
 }
 
-/*Estilo Header*/
+/* ==========================================================================
+   Estilos do Cabeçalho (Header)
+   ========================================================================== */
 header {
   position: relative;
 }
@@ -274,7 +265,7 @@ header img {
   align-items: center;
   justify-content: center;
   padding: 60px 20px;
-  background-color: var(--primary-color);
+  background-color: var(--color-pale-blue);
 }
 
 .header-text h1 {
@@ -295,47 +286,76 @@ header img {
   text-align: center;
 }
 
-/*Estilo Main Content*/
+/* ==========================================================================
+   Estilos do Conteúdo Principal (Main)
+   ========================================================================== */
 .main_content {
   display: flex;
-  margin: 50px 0 50px 0;
+  align-items: center;
+  padding: 50px 25px;
+  flex-direction: column;
 }
 
 .main_content p {
   text-align: justify;
   font-size: 16px;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
   letter-spacing: 0;
-  max-width: 350px;
   width: auto;
   height: auto;
   line-height: 20px;
-  padding: 65px 15px 0 30px;
+  max-width: 768px;
 }
 
-.main_content img {
-  width: 120.56px;
-  height: auto;
-  float: right;
-  padding: 0 0 0 15px;
+.slogan {
+  background-color: var(--color-pale-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 35px;
+  border: 1px solid var(--color-dark-gray);
+  border-radius: 35px;
+  box-shadow: 0px 5px 10px #35353533;
 }
 
-/*Estilo About Me*/
+.slogan-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.slogan-text {
+  font-family: "Neue Machina", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  text-align: justify;
+  color: var(--color-dark-gray);
+  margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   Estilos da Seção Sobre Mim (About Me)
+   ========================================================================== */
 .background-about_me {
   background: linear-gradient(to bottom,
-      #fafafa 0%,
-      #fafafa 50%,
-      #cee2ff 50%,
-      #cee2ff 100%);
+      var(--color-almost-white) 0%,
+      var(--color-almost-white) 50%,
+      var(--color-pale-blue) 50%,
+      var(--color-pale-blue) 100%);
 }
 
 .about_me {
-  background-color: #9bc3ff;
+  background-color: var(--color-soft-blue);
   margin: 40px 15px 0px 15px;
   padding: 50px 10px 50px 10px;
   border-radius: 35px;
   text-align: center;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--color-dark-gray);
 }
 
 .Title_WhoAmI {
@@ -344,7 +364,7 @@ header img {
   text-align: center;
   font-size: 50px;
   margin-bottom: 15px;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
 }
 
 .about_me p {
@@ -356,7 +376,7 @@ header img {
   max-width: auto;
   height: auto;
   margin: 30px auto;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
 }
 
 .about_me img {
@@ -364,9 +384,11 @@ header img {
   transition: transform 0.3s ease;
 }
 
-/*Estilo Hobbies*/
+/* ==========================================================================
+   Estilos da Seção de Hobbies
+   ========================================================================== */
 .hobbies {
-  background-color: #cee2ff;
+  background-color: var(--color-pale-blue);
   padding: 40px 35px 40px 35px;
   text-align: center;
 }
@@ -376,7 +398,7 @@ header img {
   text-align: center;
   font-weight: 900;
   font-size: 50px;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
   margin: 30px 0 30px 0;
 }
 
@@ -386,7 +408,7 @@ header img {
   line-height: 20px;
   font-size: 16px;
   font-family: "Google Sans Flex", sans-serif;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
 }
 
 .playing_img {
@@ -403,7 +425,9 @@ header img {
   margin: 20px 0 20px 0;
 }
 
-/*Estilo Verse*/
+/* ==========================================================================
+   Estilos da Seção de Versículo (Verse)
+   ========================================================================== */
 .verse_container {
   background-image: url(../images/background-image_1.webp);
   background-size: cover;
@@ -420,14 +444,14 @@ header img {
 .verse {
   margin: 50px auto;
   width: 270px;
-  background-color: var(--background-color);
+  background-color: var(--color-almost-white);
   border-radius: 35px;
   padding: 30px 20px 30px 20px;
 }
 
 .verse-text {
   font-family: "Open Sauce Two", sans-serif;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
   font-size: 30px;
   line-height: 35px;
   text-align: left;
@@ -439,26 +463,28 @@ header img {
   font-family: "Open Sauce Two", sans-serif;
   font-size: 20px;
   font-weight: 900;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
   padding-left: 80px;
   text-align: right;
 }
 
-/*Skills*/
+/* ==========================================================================
+   Estilos da Seção de Habilidades (Skills)
+   ========================================================================== */
 #skills {
-  background-color: #1A2336;
+  background-color: var(--color-deep-navy);
   padding: 20px;
 }
 
 .main-skills {
-  color: var(--background-color);
+  color: var(--color-almost-white);
 }
 
 .main-skills h2 {
   font-family: "Open Sauce Two", sans-serif;
   font-weight: 900;
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   margin: 15px 0 15px 0;
 }
 
@@ -474,7 +500,7 @@ header img {
 }
 
 .tray_skills {
-  background-color: #e9f2ff;
+  background-color: var(--color-pale-blue);
   margin: 40px 0 40px 0;
   padding: 50px 10px 50px 10px;
   border-radius: 35px;
@@ -493,7 +519,7 @@ header img {
 }
 
 .front-end h3 {
-  color: var(--text-color);
+  color: var(--color-dark-gray);
   font-family: "Open Sauce Two", sans-serif;
   font-weight: 900;
   text-align: center;
@@ -502,7 +528,7 @@ header img {
 }
 
 .back-end h3 {
-  color: var(--text-color);
+  color: var(--color-dark-gray);
   font-family: "Open Sauce Two", sans-serif;
   font-weight: 900;
   text-align: center;
@@ -511,7 +537,7 @@ header img {
 }
 
 .technologies h3 {
-  color: var(--text-color);
+  color: var(--color-dark-gray);
   font-family: "Open Sauce Two", sans-serif;
   font-weight: 900;
   text-align: center;
@@ -523,30 +549,32 @@ header img {
   width: 100px;
   padding: 5px;
   margin: 10px;
-  border: 1px solid var(--text-color);
-  border-radius: 20px;
-  transition: transform 0.5s ease, border-radius 0.5s ease, box-shadow 0.5s ease;
+  background-color: var(--color-almost-white);
+  border: 1px solid var(--color-dark-gray);
+  border-radius: 30px;
+  transition: all 0.5s ease;
 }
 
 .tray_skills img:hover {
-  border-radius: 35px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  background-color: #cee2ff;
+  background-color: var(--color-soft-blue);
 }
 
-/*Estilo Experiência Profissional*/
+/* ==========================================================================
+   Estilos da Seção de Experiência Profissional
+   ========================================================================== */
 #professional-experience {
   padding: 50px 20px;
-  background-color: #9bc3ff;
+  background-color: var(--color-soft-blue);
 }
 
 .main-experience h2 {
   font-family: "Open Sauce Two", sans-serif;
   font-weight: 900;
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   margin: 15px 0 15px 0;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
 }
 
 .main-experience p {
@@ -557,7 +585,7 @@ header img {
   width: 90%;
   max-width: 1000px;
   margin: 30px auto;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
 }
 
 .experience-list {
@@ -566,8 +594,8 @@ header img {
 }
 
 .experience-item {
-  background-color: var(--background-color-2);
-  border: 1px solid var(--text-color);
+  background-color: var(--color-grayish-white);
+  border: 1px solid var(--color-dark-gray);
   border-radius: 35px;
   padding: 25px 30px;
 }
@@ -585,7 +613,7 @@ header img {
   font-family: "Open Sauce Two", sans-serif;
   font-weight: 700;
   font-size: 22px;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
 }
 
 .experience-header .company,
@@ -593,19 +621,19 @@ header img {
   font-family: "Open Sauce Two", sans-serif;
   font-weight: 600;
   font-size: 18px;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
   text-decoration: none;
   transition: color .3s ease;
 }
 
 .experience-header .company a:hover {
-  color: #9bc3ff;
+  color: var(--color-soft-blue);
 }
 
 .experience-period {
   font-family: "Google Sans Flex", sans-serif;
   font-size: 14px;
-  color: #7A7F8C;
+  color: var(--color-muted-blue);
   margin-bottom: 15px;
 }
 
@@ -614,12 +642,14 @@ header img {
   font-size: 16px;
   text-align: justify;
   line-height: 20px;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
 }
 
-/*Estilo My Projects*/
+/* ==========================================================================
+   Estilos da Seção Meus Projetos (My Projects)
+   ========================================================================== */
 #my_projects {
-  background-color: #CEE2FF;
+  background-color: var(--color-pale-blue);
 }
 
 .my_projects_content {
@@ -630,7 +660,7 @@ header img {
   font-family: "Open Sauce Two", sans-serif;
   font-weight: 900;
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   margin: 15px 0 15px 0;
 }
 
@@ -646,6 +676,7 @@ header img {
   transition: all 0.3s;
 }
 
+/* --- Carrossel --- */
 .carousel {
   position: relative;
   width: auto;
@@ -671,9 +702,9 @@ header img {
   flex: 0 0 100%;
   height: auto;
   box-sizing: border-box;
-  background-color: var(--background-color);
+  background-color: var(--color-almost-white);
   border-radius: 35px;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--color-dark-gray);
   transition: all 0.3s;
 }
 
@@ -685,7 +716,7 @@ header img {
 
 .carousel-track a {
   text-decoration: none;
-  background-color: var(--background-color);
+  background-color: var(--color-almost-white);
   border-radius: 35px;
 }
 
@@ -695,7 +726,7 @@ header img {
 }
 
 .description h3 {
-  color: var(--text-color);
+  color: var(--color-dark-gray);
   font-family: "Open Sauce Two", sans-serif;
   font-weight: 900;
   text-align: left;
@@ -705,7 +736,7 @@ header img {
 
 .description p {
   text-align: justify;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
   line-height: 20px;
   font-size: 16px;
   font-family: "Google Sans Flex", sans-serif;
@@ -717,9 +748,9 @@ header img {
   top: 50%;
   border-radius: 35px;
   transform: translateY(-50%);
-  background-color: var(--background-color);
-  border: 1px solid var(--text-color);
-  color: var(--text-color);
+  background-color: var(--color-almost-white);
+  border: 1px solid var(--color-dark-gray);
+  color: var(--color-dark-gray);
   padding: 5px 18px 7px 18px;
   font-size: 30px;
   z-index: 1;
@@ -739,7 +770,9 @@ header img {
   right: 10px;
 }
 
-
+/* ==========================================================================
+   Estilos dos Botões Finais
+   ========================================================================== */
 #container-final-buttons {
   padding: 50px 20px;
   justify-items: center;
@@ -749,7 +782,7 @@ header img {
 .cv-content {
   justify-content: center;
   display: flex;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--color-dark-gray);
   width: 200px;
   padding: 30px 20px;
   border-radius: 30px;
@@ -759,7 +792,7 @@ header img {
 
 .cv-content:hover {
   border-radius: 35px;
-  background-color: #9bc3ff;
+  background-color: var(--color-soft-blue);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -774,7 +807,7 @@ header img {
   justify-content: center;
   display: flex;
   width: 115px;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
   font-family: "Open Sauce Two", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -791,7 +824,7 @@ header img {
 .linkedin-button-content {
   justify-content: center;
   display: flex;
-  border: 1px solid var(--text-color);
+  border: 1px solid var(--color-dark-gray);
   width: 200px;
   padding: 30px 20px;
   border-radius: 30px;
@@ -801,7 +834,7 @@ header img {
 
 .linkedin-button-content:hover {
   border-radius: 35px;
-  background-color: #9bc3ff;
+  background-color: var(--color-soft-blue);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -816,7 +849,7 @@ header img {
   justify-content: center;
   display: flex;
   width: 120px;
-  color: var(--text-color);
+  color: var(--color-dark-gray);
   font-family: "Open Sauce Two", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -830,15 +863,17 @@ header img {
   float: right;
 }
 
-/*Estilo Footer*/
+/* ==========================================================================
+   Estilos do Rodapé (Footer)
+   ========================================================================== */
 footer {
-  background-color: #1A2336;
+  background-color: var(--color-deep-navy);
   padding: 35px 15px;
 }
 
 .contact_me {
   text-align: center;
-  color: var(--background-color);
+  color: var(--color-almost-white);
   padding: 10px;
 }
 
@@ -847,29 +882,29 @@ footer {
 }
 
 .contact_me button {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background-color: var(--color-almost-white);
+  color: var(--color-dark-gray);
   font-family: "Open Sauce Two", sans-serif;
   font-weight: 700;
   font-size: 16px;
   padding: 10px 30px 10px 30px;
-  border-color: var(--text-color);
+  border-color: var(--color-dark-gray);
   border-radius: 15px;
   transition: background-color 0.5s ease, border-radius 0.5s ease;
   ;
-  border: 2px solid var(--background-color);
+  border: 2px solid var(--color-almost-white);
 }
 
 .contact_me button:hover {
-  background-color: #9bc3ff;
+  background-color: var(--color-deep-navy);
   border-radius: 20px;
-  color: var(--text-color);
-  border: 2px solid var(--background-color);
+  color: var(--color-almost-white);
+  border: 2px solid var(--color-almost-white);
 }
 
 .copyright {
   text-align: center;
-  color: #7A7F8C;
+  color: var(--color-muted-blue);
   padding-top: 30px;
 }
 
